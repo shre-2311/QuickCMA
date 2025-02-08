@@ -1,16 +1,24 @@
-import Image from "next/image";
+import Navbar from "@/Components/Navbar";
+import Hero from "@/Components/Hero";
+import How from "@/Components/How";
+import Why from "@/Components/Why";
+import Price from "@/Components/Price";
+import Stories from "@/Components/Stories";
+import Contactus from "@/Components/Contactus";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
+  const show = true;
   return (
-    <div>
-      <Image
-        src="/images/quickcma-logo.png"
-        alt="QuickCMA Logo"
-        width={200}
-        height={200}
-      />
-      <h1>QuickCMA</h1>
-      <p>QuickCMA is a simple tool to create a CMA report.</p>
+    <div className=" h-auto w-screen no-scrollbar overflow-x-hidden">
+      <Navbar show={show} />
+      <Hero />
+      <How/>
+      <Why/>
+      <Price/>
+      <Stories/>
+      <Contactus/>
+      <Footer/>
     </div>
   );
 }
