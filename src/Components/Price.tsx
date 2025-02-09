@@ -1,7 +1,3 @@
-"use client";
-import Image from "next/image";
-import style from "./why.module.css";
-
 export default function Price() {
   return (
     <div className="h-[490px] w-full pt-4 flex-col justify-start items-center gap-4 inline-flex">

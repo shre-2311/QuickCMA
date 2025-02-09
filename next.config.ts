@@ -1,7 +1,41 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  reactStrictMode: true,
+  transpilePackages: ["ui"],
+  images: {
+    domains: ["i.pinimg.com","lh3.googleusercontent.com"],
+    remotePatterns: [
+      {
+        // used to add images in guest lectures section
+        protocol: "https",
+        hostname: "i.ibb.co",
+        port: "",
+        pathname: "/*/*",
+      },
+      //used to add images in sponsor section
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+        pathname: "/**/*",
+      },
+      {
+        protocol: "https",
+        hostname: "d8it4huxumps7.cloudfront.net",
+        port: "",
+        pathname: "/**/*",
+      },
+      {
+        protocol: "https",
+        hostname: "thebrandhopper.com",
+        port: "",
+        pathname: "/**/*",
+      },
+      {
+        protocol: "https",
+        hostname: "img-s-msn-com.akamaized.net",
+        port: "",
+        pathname: "/**/*",
+      },
+    ],
+  },
 };
-
-export default nextConfig;
