@@ -15,7 +15,7 @@ export default function Navbar() {
   const handleGoogleSignIn = () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
-      .then((_) => {
+      .then(() => {
         localStorage.setItem(
           "userNameSpardha",
           auth.currentUser?.displayName ?? ""
@@ -32,7 +32,7 @@ export default function Navbar() {
           email: auth.currentUser?.email ?? "",
         });
       })
-      .catch((_) => {
+      .catch(() => {
         setResult(false);
       });
   };
