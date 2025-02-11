@@ -10,6 +10,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="stylesheet" href="/JSbasics/counter/style.css" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
