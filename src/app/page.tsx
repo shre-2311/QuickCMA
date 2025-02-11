@@ -6,6 +6,8 @@ import Price from "@/Components/Price";
 import Stories from "@/Components/Stories";
 import Contactus from "@/Components/Contactus";
 import Footer from "@/Components/Footer";
+import "./globals.css";
+
 
 export default function Home() {
   console.log(process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID)
