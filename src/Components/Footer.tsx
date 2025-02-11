@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
   return (
     <div className="w-full h-auto px-[244px] py-[64px] bg-[#35362d] flex-col justify-start items-start gap-2.5 inline-flex overflow-hidden">
@@ -13,11 +14,11 @@ export default function Footer() {
               Learn More
             </div>
             <div className="self-stretch opacity-80 text-white text-sm font-medium font-['Satoshi Variable'] leading-[30px]">
-              About Lift
+              <Link href="/about">About Quick CMA</Link>
               <br />
-              Press Relaases
+              <Link href="/PrivacyPolicy">Privacy Policy</Link>
               <br />
-              Environment
+              <Link href="/TermsAndConditions">Terms And Conditions</Link>
             </div>
           </div>
           <div className=" flex-col justify-center items-start gap-[26px] inline-flex">
@@ -25,20 +26,20 @@ export default function Footer() {
               Contact Us
             </div>
             <div className="flex flex-col items-start  gap-4">
-              <div className="w-full items-start inline-flex justify-between gap-4">
+              <div className="w-full items-start inline-flex justify-start gap-4">
                 <div className=" opacity-70 text-white text-sm font-normal font-['Circular Std']">
-                  Hotel Reservation:
+                  Phone:
                 </div>
                 <div className=" text-white text-sm font-normal font-['Circular Std']">
-                  123-456-7890
+                  932-951-9345
                 </div>
               </div>
               <div className="w-full items-start inline-flex justify-between gap-4">
                 <div className=" opacity-70 text-white text-sm font-normal font-['Circular Std']">
-                  Ticket Office:
+                  Email:
                 </div>
                 <div className=" text-white text-sm font-normal font-['Circular Std']">
-                  123-456-7890
+                  cmaquick@gmail.com
                 </div>
               </div>
             </div>
