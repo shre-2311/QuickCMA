@@ -14,7 +14,7 @@ export default function Footer() {
               Learn More
             </div>
             <div className="self-stretch opacity-80 text-white text-sm font-medium font-['Satoshi Variable'] leading-[30px]">
-              <Link href="/about">About Quick CMA</Link>
+              <Link href="/AboutUs">About Quick CMA</Link>
               <br />
               <Link href="/PrivacyPolicy">Privacy Policy</Link>
               <br />
@@ -31,7 +31,7 @@ export default function Footer() {
                   Phone:
                 </div>
                 <div className=" text-white text-sm font-normal font-['Circular Std']">
-                  932-951-9345
+                  +91 932-951-9345
                 </div>
               </div>
               <div className="w-full items-start inline-flex justify-between gap-4">

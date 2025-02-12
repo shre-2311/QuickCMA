@@ -41,7 +41,7 @@ export default function Navbar() {
       <div className="w-full h-[70px] pl-2 pr-5 xl:px-4 2xl:px-8 py-[16.3px] border-[0.5px] border-[#E8E8E899] backdrop-blur-[44px] justify-between items-center inline-flex bg-white shadow-[0px_12px_48px_0px_#0067690D] ">
         <Link href="/" scroll className="min-w-fit min-h-fit">
           <Image
-            src={"/QuickCMA.png"}
+            src={"/QuickCMA.svg"}
             alt="alt"
             width={196.96}
             height={65.68}
@@ -111,6 +111,7 @@ export default function Navbar() {
           </Link>
         ) : (
           <div className="flex gap-2">
+            <div className="text-black text-lg h-full flex items-center">Hey, {user.name} 👋🏼</div>
             <Image
               className={`UserImage w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 cursor-pointer`}
               src={user.photo}
