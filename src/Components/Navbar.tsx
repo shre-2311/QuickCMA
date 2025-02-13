@@ -7,6 +7,7 @@ import { auth } from "@/app/firebaseconfig";
 
 export default function Navbar() {
   const [menuopen, setMenuopen] = useState<boolean>(false);
+  const [logoutVisible, setLogoutVisible] = useState<boolean>(false);
   const [result, setResult] = useState<boolean>(false);
   const [user, setUser] = useState({
     name: "",
@@ -110,17 +111,23 @@ export default function Navbar() {
             <div>LOGIN NOW</div>
           </Link>
         ) : (
-          <div className="flex gap-2">
-            <div className="text-black text-lg h-full flex items-center">
+          <div className="flex gap-2 items-center">
+            <div className="text-black text-lg h-full flex items-center gap-2">
               Hey, {user.name} 👋🏼
-            </div>
             <Image
               className={`UserImage w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 cursor-pointer`}
               src={user.photo}
               alt="Bordered avatar"
               width={40}
               height={40}
+              onClick={() => setLogoutVisible(!logoutVisible)}
             />
+            </div>
+            <div
+              className={`${
+                logoutVisible ? "block" : "hidden"
+              } absolute top-16 right-2 bg-white rounded-[32px] border-[#000000a3] border-[1px] border-solid`}
+            >
             <Link
               href={"/"}
               onClick={() => {
@@ -134,6 +141,7 @@ export default function Navbar() {
             >
               <div>LOGOUT</div>
             </Link>
+            </div>
           </div>
         )}
       <Image

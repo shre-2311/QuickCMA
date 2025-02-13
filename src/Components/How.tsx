@@ -10,7 +10,7 @@ export default function How() {
         </div>
         <div className="flex items-center flex-col gap-4">
           {/* step1 */}
-          <div className="flex flex-col md:flex-row gap-[27px] p-2">
+          <div className="flex flex-col md:flex-row gap-[27px] px-2">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 1
@@ -19,8 +19,8 @@ export default function How() {
                 Step 1
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
-              <div className="w-[360.6px] flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+              <div className="md:w-[360.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Enter Your Details
                 </div>
@@ -29,7 +29,7 @@ export default function How() {
                   parameters directly from the dashboard.
                 </div>
               </div>
-              <div>
+              <div className="w-full px-2">
                 <Image
                   src={"/cover.png"}
                   alt="alt"
@@ -41,7 +41,7 @@ export default function How() {
             </div>
           </div>
           {/* step2 */}
-          <div className="flex flex-col md:flex-row gap-[27px] p-2">
+          <div className="flex flex-col md:flex-row gap-[27px] px-2">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 2
@@ -50,8 +50,8 @@ export default function How() {
                 Step 2
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
-              <div className="w-[360.6px] flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+              <div className="md:w-[360.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Import Financial Data
                 </div>
@@ -61,7 +61,7 @@ export default function How() {
                   into the CMA format.
                 </div>
               </div>
-              <div>
+              <div className="w-full px-2">
                 <Image
                   src={"/cover.png"}
                   alt="alt"
@@ -73,7 +73,7 @@ export default function How() {
             </div>
           </div>
           {/* step3 */}
-          <div className="flex flex-col md:flex-row gap-[27px] p-2">
+          <div className="flex flex-col md:flex-row gap-[27px] px-2">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 3
@@ -82,8 +82,8 @@ export default function How() {
                 Step 3
               </div>
             </div>
-            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
-              <div className="w-[360.6px] flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+              <div className="md:w-[360.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Generate Your CMA Report
                 </div>
@@ -92,7 +92,7 @@ export default function How() {
                   parameters directly from the dashboard.
                 </div>
               </div>
-              <div>
+              <div className="w-full px-2">
                 <Image
                   src={"/cover.png"}
                   alt="alt"

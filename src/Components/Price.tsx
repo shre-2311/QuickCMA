@@ -13,7 +13,7 @@ export default function Price() {
           Pricing
         </span>
       </div>
-      <div className="justify-center items-center gap-[107px] inline-flex flex-col md:flex-row">
+      <div className="justify-center items-center gap-6 md:gap-[107px] inline-flex flex-col md:flex-row">
         <div className=" px-[30px] py-5 bg-[#4b7492] rounded-[26px] shadow-[0px_14px_34px_0px_rgba(1,1,1,0.15)] flex-col justify-start items-end gap-5 inline-flex">
           <div className="flex-col justify-start items-start gap-4 flex">
             <div className="flex-col justify-start items-start gap-5 flex">
