@@ -10,16 +10,16 @@ export default function How() {
         </div>
         <div className="flex items-center flex-col gap-4">
           {/* step1 */}
-          <div className="flex flex-row gap-[27px]">
+          <div className="flex flex-col md:flex-row gap-[27px] p-2">
             <div className="flex flex-col items-center gap-[15px]">
-              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full flex items-center justify-center font-bold text-[50px]">
+              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 1
               </div>
               <div className="text-[#5F5F5F] font-semibold text-[16px]">
                 Step 1
               </div>
             </div>
-            <div className="flex flex-row w-[978px] h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
               <div className="w-[360.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Enter Your Details
@@ -41,16 +41,16 @@ export default function How() {
             </div>
           </div>
           {/* step2 */}
-          <div className="flex flex-row gap-[27px]">
+          <div className="flex flex-col md:flex-row gap-[27px] p-2">
             <div className="flex flex-col items-center gap-[15px]">
-              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full flex items-center justify-center font-bold text-[50px]">
+              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 2
               </div>
               <div className="text-[#5F5F5F] font-semibold text-[16px]">
                 Step 2
               </div>
             </div>
-            <div className="flex flex-row w-[978px] h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
               <div className="w-[360.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Import Financial Data
@@ -73,16 +73,16 @@ export default function How() {
             </div>
           </div>
           {/* step3 */}
-          <div className="flex flex-row gap-[27px]">
+          <div className="flex flex-col md:flex-row gap-[27px] p-2">
             <div className="flex flex-col items-center gap-[15px]">
-              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full flex items-center justify-center font-bold text-[50px]">
+              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 3
               </div>
               <div className="text-[#5F5F5F] font-semibold text-[16px]">
                 Step 3
               </div>
             </div>
-            <div className="flex flex-row w-[978px] h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
               <div className="w-[360.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Generate Your CMA Report

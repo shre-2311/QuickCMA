@@ -3,25 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="w-full h-auto px-[244px] py-[64px] bg-[#35362d] flex-col justify-start items-start gap-2.5 inline-flex overflow-hidden">
+    <div className="w-full h-auto px-4 md:px-[244px] py-3 md:py-[64px] bg-[#35362d] flex-col justify-start items-start gap-2.5 inline-flex overflow-hidden">
       <div className="w-full flex flex-col items-center gap-3">
-        <div className=" w-full justify-between items-start gap-40 inline-flex">
+        <div className="w-full justify-between items-center md:items-start gap-8 md:gap-40 inline-flex flex-col md:flex-row">
           <div className="text-white text-4xl font-bold font-['Satoshi Variable'] leading-10">
             Quick CMA
           </div>
           <div className="w-auto flex-col justify-start items-start gap-5 inline-flex">
-            <div className="self-stretch text-white text-lg font-normal font-['Circular Std']">
+            <div className="self-stretch text-white text-lg font-normal text-center md:text-start font-['Circular Std']">
               Learn More
             </div>
-            <div className="self-stretch opacity-80 text-white text-sm font-medium font-['Satoshi Variable'] leading-[30px]">
+            <div className="self-stretch opacity-80 text-white text-sm font-medium font-['Satoshi Variable'] leading-[30px] flex flex-col items-center md:items-start">
               <Link href="/AboutUs">About Quick CMA</Link>
-              <br />
               <Link href="/PrivacyPolicy">Privacy Policy</Link>
-              <br />
               <Link href="/TermsAndConditions">Terms And Conditions</Link>
             </div>
           </div>
-          <div className=" flex-col justify-center items-start gap-[26px] inline-flex">
+          <div className=" flex-col justify-center items-center md:items-start gap-[26px] inline-flex">
             <div className=" text-white text-lg font-normal font-['Circular Std']">
               Contact Us
             </div>
@@ -44,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="h-[86px] flex flex-col items-start justify-between">
+          <div className="h-[86px] flex flex-col items-center md:items-start justify-between">
             <div className="w-[66.67px]  text-white text-lg font-normal font-['Circular Std']">
               Social
             </div>

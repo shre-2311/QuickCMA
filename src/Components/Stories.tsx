@@ -88,7 +88,10 @@ export default function Stories() {
   }, [scrolls, scrolling]);
 
   return (
-    <div className="w-full h-full md:h-[507px] flex justify-start relative overflow-y-visible">
+    <div className="w-full h-full md:h-[600px] flex flex-col justify-start relative overflow-y-visible">
+      <div className="text-[32px] font-bold leading-10 text-black w-full justify-center flex py-2">
+          <span className="text-[#972424]">Testimonials</span>
+        </div>
       <Image
         src="/Next-button.svg"
         alt="Previous"
@@ -110,7 +113,7 @@ export default function Stories() {
         }}
       />
       <div
-        className="h-full w-full flex overflow-x-scroll overflow-visible md:pointer-events-none items-start snap-x snap-mandatory relative"
+        className="h-full w-full pb-48 md:pb-0 flex overflow-x-scroll overflow-visible md:pointer-events-none items-start snap-x snap-mandatory relative"
         ref={scArr}
       >
         <div className="flex gap-[28px] md:gap-[76.8px] mx-[38%] overflow-y-visible">

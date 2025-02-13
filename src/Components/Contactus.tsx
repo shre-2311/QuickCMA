@@ -14,11 +14,8 @@ export default function Contactus() {
   const [ishoverQuery, setIshoverQuery] = React.useState(false);
   const [txt, setTxt] = React.useState("Submit");
   return (
-    <div className="h-[693px] w-full py-[30px] justify-center items-center gap-[22px] inline-flex">
-      <div className="w-[697px] h-[633px] relative">
-        <div className="w-[697px] h-[515px] left-0 top-[118px] absolute  overflow-hidden">
-          <div className="w-[46.54px] h-[46.56px] left-[488.49px] top-[39.61px] absolute" />
-        </div>
+    <div className="md:h-[693px] w-full py-[30px] justify-center items-center gap-[22px] inline-flex flex-col md:flex-row">
+      <div className="md:w-[697px] md:h-[633px] relative">
         <Image
           src={"/vector.svg"}
           alt="alt"
@@ -27,7 +24,7 @@ export default function Contactus() {
           className="h-full "
         />
       </div>
-      <div className="w-[581px] flex-col justify-center items-start gap-[17px] inline-flex">
+      <div className="w-full md:w-[581px] px-2 flex-col justify-center items-start gap-[17px] inline-flex">
         <div className="relative w-full">
           <input
           type="text"
