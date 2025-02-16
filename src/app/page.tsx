@@ -11,6 +11,7 @@ export default function Home() {
   const show = true;
   return (
     <div className=" h-auto w-screen no-scrollbar overflow-x-hidden">
+       
       <Navbar show={show} />
       <Hero />
       <How/>
