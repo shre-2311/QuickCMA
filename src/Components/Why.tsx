@@ -9,10 +9,10 @@ export default function Why() {
         <div className="text-[32px] font-bold leading-10 text-black">
           Why <span className="text-[#972424]">Choose</span> Us?
         </div>
-        <div className="h-[400px] w-full flex overflow-x-scroll overflow-y-visible no-scrollbar">
+        <div className="h-[510px] w-full flex overflow-x-scroll overflow-y-visible no-scrollbar">
           <div className={`flex gap-7 ${style["slide-track"]}`}>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Unmatched Flexibility
                 </div>
@@ -24,14 +24,14 @@ export default function Why() {
               <Image
                 src="/why2.png"
                 alt="Descriptive alt text"
-                width={200}
-                height={200}
-                className="object-cover mt-4"
-                style={{ width: "auto", height: "auto" }}
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
               />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   One-Click Automation
                 </div>
@@ -41,9 +41,17 @@ export default function Why() {
                   seconds.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Blazing Fast
                 </div>
@@ -52,9 +60,17 @@ export default function Why() {
                   min—a game changer compared to the 2-hour manual process.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Accuracy You Can Trust
                 </div>
@@ -63,9 +79,17 @@ export default function Why() {
                   logical and precise financial insights.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Effortless & Hassle-Free
                 </div>
@@ -74,9 +98,17 @@ export default function Why() {
                   CMAs with ease, making delegation seamless.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Unmatched Flexibility
                 </div>
@@ -85,9 +117,17 @@ export default function Why() {
                   is editable. You can even modify formulas to suit your needs.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   One-Click Automation
                 </div>
@@ -96,9 +136,17 @@ export default function Why() {
                   &quot;Make CMA&quot;—your report is ready in under 30 seconds.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Blazing Fast
                 </div>
@@ -107,9 +155,17 @@ export default function Why() {
                   min—a game changer compared to the 2-hour manual process.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Accuracy You Can Trust
                 </div>
@@ -118,9 +174,17 @@ export default function Why() {
                   logical and precise financial insights.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Effortless & Hassle-Free
                 </div>
@@ -129,9 +193,17 @@ export default function Why() {
                   CMAs with ease, making delegation seamless.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Unmatched Flexibility
                 </div>
@@ -140,9 +212,17 @@ export default function Why() {
                   is editable. You can even modify formulas to suit your needs.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   One-Click Automation
                 </div>
@@ -151,9 +231,17 @@ export default function Why() {
                   &quot;Make CMA&quot;—your report is ready in under 30 seconds.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Blazing Fast
                 </div>
@@ -162,9 +250,17 @@ export default function Why() {
                   min—a game changer compared to the 2-hour manual process.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Accuracy You Can Trust
                 </div>
@@ -173,9 +269,17 @@ export default function Why() {
                   logical and precise financial insights.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Effortless & Hassle-Free
                 </div>
@@ -184,9 +288,17 @@ export default function Why() {
                   CMAs with ease, making delegation seamless.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Unmatched Flexibility
                 </div>
@@ -195,9 +307,17 @@ export default function Why() {
                   is editable. You can even modify formulas to suit your needs.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   One-Click Automation
                 </div>
@@ -206,9 +326,17 @@ export default function Why() {
                   &quot;Make CMA&quot;—your report is ready in under 30 seconds.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Blazing Fast
                 </div>
@@ -217,9 +345,17 @@ export default function Why() {
                   min—a game changer compared to the 2-hour manual process.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Accuracy You Can Trust
                 </div>
@@ -228,9 +364,17 @@ export default function Why() {
                   logical and precise financial insights.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
-            <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
-              <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
+            <div className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
+              <div className="self-stretch h-auto flex-col justify-start items-start gap-1 flex">
                 <div className="text-white text-2xl font-bold leading-normal">
                   Effortless & Hassle-Free
                 </div>
@@ -239,6 +383,14 @@ export default function Why() {
                   CMAs with ease, making delegation seamless.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={150}
+                height={300}
+                className="h-auto w-full rounded-md" 
+                
+              />
             </div>
           </div>
         </div>
