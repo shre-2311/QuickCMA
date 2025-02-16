@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 export default function Contactus() {
   const [inputName, setInputName] = React.useState("");

@@ -30,7 +30,7 @@ export default function Hero() {
       </div>
       <div className="w-auto h-auto ">
         <Image
-          src={"/cover.png"}
+          src={"/dashboard.png"}
           alt="alt"
           width={558}
           height={280}

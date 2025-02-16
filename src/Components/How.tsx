@@ -31,7 +31,7 @@ export default function How() {
               </div>
               <div className="w-full px-2">
                 <Image
-                  src={"/cover.png"}
+                  src={"/how1.png"}
                   alt="alt"
                   width={558}
                   height={280}
@@ -63,7 +63,7 @@ export default function How() {
               </div>
               <div className="w-full px-2">
                 <Image
-                  src={"/cover.png"}
+                  src={"/how2.png"}
                   alt="alt"
                   width={558}
                   height={280}
@@ -94,7 +94,7 @@ export default function How() {
               </div>
               <div className="w-full px-2">
                 <Image
-                  src={"/cover.png"}
+                  src={"/how3.png"}
                   alt="alt"
                   width={558}
                   height={280}

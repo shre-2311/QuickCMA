@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import style from "./why.module.css";
 
 export default function Why() {
@@ -19,6 +21,14 @@ export default function Why() {
                   is editable. You can even modify formulas to suit your needs.
                 </div>
               </div>
+              <Image
+                src="/why2.png"
+                alt="Descriptive alt text"
+                width={200}
+                height={200}
+                className="object-cover mt-4"
+                style={{ width: "auto", height: "auto" }}
+              />
             </div>
             <div className="w-[357px] h-[314px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex">
               <div className="self-stretch h-[91px] flex-col justify-start items-start gap-1 flex">
@@ -27,7 +37,8 @@ export default function Why() {
                 </div>
                 <div className="self-stretch text-[#b8b8b8]/80 text-sm font-light">
                   Simply import your Tally data, set your limits, and click
-                  &quot; Make CMA &quot; —your report is ready in under 30 seconds.
+                  &quot; Make CMA &quot; —your report is ready in under 30
+                  seconds.
                 </div>
               </div>
             </div>
