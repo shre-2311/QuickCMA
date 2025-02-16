@@ -2,9 +2,8 @@ import Image from "next/image";
 
 type StoriesCarouselTItemProps = {
   story: {
-    topRated: boolean;
     name: string;
-    location: string;
+    about: string;
     experience: string;
     admissions: string;
     image: string;
@@ -31,7 +30,7 @@ export default function StoriesCarouselTItem({
             {story.name}
           </div>
           <div className="text-[#0C356ACC] text-[12px] md:text-[16px] leading-[16.8px] md:leading-[22.4px] font-normal">
-            {story.location}
+            {story.about}
           </div>
         </div>
       </div>

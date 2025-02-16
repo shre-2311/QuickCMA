@@ -3,24 +3,24 @@ import Image from "next/image";
 
 export default function How() {
   return (
-    <div className="w-screen h-auto bg-white flex flex-row items-center justify-center gap-x-[200px] py-8">
+    <div className="w-screen h-auto bg-white flex flex-row items-center justify-center gap-x-[200px] py-8" id="How">
       <div className="flex flex-col items-center gap-5">
         <div className="text-[32px] font-bold leading-10 text-black">
           How <span className="text-[#972424]">It</span> works
         </div>
         <div className="flex items-center flex-col gap-4">
           {/* step1 */}
-          <div className="flex flex-row gap-[27px]">
+          <div className="flex flex-col md:flex-row gap-[27px] px-2">
             <div className="flex flex-col items-center gap-[15px]">
-              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full flex items-center justify-center font-bold text-[50px]">
+              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 1
               </div>
               <div className="text-[#5F5F5F] font-semibold text-[16px]">
                 Step 1
               </div>
             </div>
-            <div className="flex flex-row w-[978px] h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
-              <div className="w-[360.6px] flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+              <div className="md:w-[550.6px] flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Enter Your Details
                 </div>
@@ -29,9 +29,9 @@ export default function How() {
                   parameters directly from the dashboard.
                 </div>
               </div>
-              <div>
+              <div className="w-full px-2">
                 <Image
-                  src={"/cover.png"}
+                  src={"/how1.png"}
                   alt="alt"
                   width={558}
                   height={280}
@@ -41,17 +41,17 @@ export default function How() {
             </div>
           </div>
           {/* step2 */}
-          <div className="flex flex-row gap-[27px]">
+          <div className="flex flex-col md:flex-row gap-[27px] px-2">
             <div className="flex flex-col items-center gap-[15px]">
-              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full flex items-center justify-center font-bold text-[50px]">
+              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 2
               </div>
               <div className="text-[#5F5F5F] font-semibold text-[16px]">
                 Step 2
               </div>
             </div>
-            <div className="flex flex-row w-[978px] h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
-              <div className="w-[360.6px] flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+              <div className="md:w-[550.6px] flex flex-col gap-5 h-full">
                 <div className="font-semibold text-[20px] text-black">
                   Import Financial Data
                 </div>
@@ -61,9 +61,9 @@ export default function How() {
                   into the CMA format.
                 </div>
               </div>
-              <div>
+              <div className="w-full px-2">
                 <Image
-                  src={"/cover.png"}
+                  src={"/how2.png"}
                   alt="alt"
                   width={558}
                   height={280}
@@ -73,17 +73,17 @@ export default function How() {
             </div>
           </div>
           {/* step3 */}
-          <div className="flex flex-row gap-[27px]">
+          <div className="flex flex-col md:flex-row gap-[27px] px-2">
             <div className="flex flex-col items-center gap-[15px]">
-              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full flex items-center justify-center font-bold text-[50px]">
+              <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 3
               </div>
               <div className="text-[#5F5F5F] font-semibold text-[16px]">
                 Step 3
               </div>
             </div>
-            <div className="flex flex-row w-[978px] h-[183.17px] gap-5 py-5 px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
-              <div className="w-[360.6px] flex flex-col gap-5">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+              <div className="md:w-[550.6px] h-full flex flex-col gap-5">
                 <div className="font-semibold text-[20px] text-black">
                   Generate Your CMA Report
                 </div>
@@ -92,9 +92,9 @@ export default function How() {
                   parameters directly from the dashboard.
                 </div>
               </div>
-              <div>
+              <div className="w-full px-2">
                 <Image
-                  src={"/cover.png"}
+                  src={"/how3.png"}
                   alt="alt"
                   width={558}
                   height={280}
