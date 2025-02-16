@@ -1,6 +1,6 @@
 export default function Price() {
   return (
-    <div className="md:h-[490px] w-full pt-4 pb-12 md:pb-0 flex-col justify-start items-center gap-4 inline-flex">
+    <div className="md:h-[490px] w-full pt-4 pb-12 md:pb-0 flex-col justify-start items-center gap-4 inline-flex" id="price">
       <div className="text-center">
         <span className="text-black text-[32px] font-bold font-['Satoshi Variable'] leading-10">
           Plans{" "}

@@ -52,7 +52,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden lg:flex justify-start items-start gap-6">
           <Link
-            href={"/"}
+            href={"#home"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -62,17 +62,17 @@ export default function Navbar() {
             </div>
           </Link>
           <Link
-            href={"/"}
+            href={"#How"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
               className={` text-center text-[#002324] text-base xl:text-xl font-medium whitespace-nowrap `}
             >
-              Features
+              How It Works
             </div>
           </Link>
           <Link
-            href={"/"}
+            href={"/AboutUs"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -82,7 +82,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link
-            href={"/"}
+            href={"#price"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -92,7 +92,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link
-            href={"/"}
+            href={"#contact"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -104,7 +104,7 @@ export default function Navbar() {
         </div>
         {!result ? (
           <Link
-            href={"/"}
+            href={""}
             onClick={handleGoogleSignIn}
             className="hidden lg:flex rounded-[32px] text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
           >
@@ -215,7 +215,7 @@ export default function Navbar() {
         )}
           <div className="flex flex-col gap-4">
             <Link
-              href={"/"}
+              href={"#home"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
@@ -225,17 +225,17 @@ export default function Navbar() {
               </div>
             </Link>
             <Link
-              href={"/"}
+              href={"#How"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
                 className={` text-center text-[#002324] text-base xl:text-xl font-medium whitespace-nowrap `}
               >
-                Features
+                How It Works
               </div>
             </Link>
             <Link
-              href={"/"}
+              href={"/AboutUs"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
@@ -245,7 +245,7 @@ export default function Navbar() {
               </div>
             </Link>
             <Link
-              href={"/"}
+              href={"#price"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
@@ -255,7 +255,7 @@ export default function Navbar() {
               </div>
             </Link>
             <Link
-              href={"/"}
+              href={"#contact"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div

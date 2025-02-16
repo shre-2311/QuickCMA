@@ -14,7 +14,7 @@ export default function Contactus() {
   const [ishoverQuery, setIshoverQuery] = React.useState(false);
   const [txt, setTxt] = React.useState("Submit");
   return (
-    <div className="md:h-[693px] w-full py-[30px] justify-center items-center gap-[22px] inline-flex flex-col md:flex-row">
+    <div className="md:h-[693px] w-full py-[30px] justify-center items-center gap-[22px] inline-flex flex-col md:flex-row" id="contact">
       <div className="md:w-[697px] md:h-[633px] relative">
         <Image
           src={"/vector.svg"}

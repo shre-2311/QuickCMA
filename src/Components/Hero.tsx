@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="w-screen h-auto bg-white flex flex-col md:flex-row items-center justify-center gap-x-[200px] gap-y-3 py-8">
+    <div className="w-screen h-auto bg-white flex flex-col md:flex-row items-center justify-center gap-x-[200px] gap-y-3 py-8" id="hero">
       <div className="flex flex-col items-start px-3">
         <div className="text-[26px] font-bold leading-10 text-black">
           Quick <span className="text-[#972424]">CMA</span>
