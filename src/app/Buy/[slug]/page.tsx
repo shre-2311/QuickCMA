@@ -6,7 +6,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function AboutUs() {
-  const mapp: { [key: string]: { name: string; no_of_pc: number; price: number } } = {
+  const mapp: {
+    [key: string]: { name: string; no_of_pc: number; price: number };
+  } = {
     "basic-plan": {
       name: "Starter",
       no_of_pc: 1,
@@ -29,7 +31,6 @@ export default function AboutUs() {
       [name]: value,
     }));
   };
-
   const [formData, setFormData] = useState({
     email: "",
     phone: "",
