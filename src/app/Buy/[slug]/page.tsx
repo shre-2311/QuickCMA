@@ -6,6 +6,15 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+declare global {
+  interface Window {
+    Razorpay: {
+      new (options: { key: string; amount: number; currency: string; name: string; description: string; order_id: string; handler: (response: { razorpay_payment_id: string }) => void; prefill: { name: string; email: string; contact: string }; theme: { color: string } }): { open: () => void };
+    };
+  }
+}
+
+
 export default function AboutUs() {
   const mapp: {
     [key: string]: { name: string; no_of_pc: number; price: number };
@@ -79,7 +88,6 @@ export default function AboutUs() {
         order_details: `Plan: ${mapp[plan].name}, No. of PCs: ${mapp[plan].no_of_pc}, Price: ₹${discountedPrice}`,
         transaction_id: transactionId,
       },
-      "mGTYVkEBZidlxelJz"
     );
 
     alert("Order placed successfully!");
@@ -110,7 +118,7 @@ export default function AboutUs() {
       name: formData.name_of_campany || formData.name,
       description: "Software License Purchase",
       order_id: order.id,
-      handler: function (response: any) {
+      handler: function (response: { razorpay_payment_id: string }) {
         setTransactionId(response.razorpay_payment_id);
       },
       prefill: {
@@ -123,7 +131,7 @@ export default function AboutUs() {
       },
     };
   
-    const rzp1 = new (window as any).Razorpay(options);
+    const rzp1 = new window.Razorpay(options);
     rzp1.open();
   };
   
