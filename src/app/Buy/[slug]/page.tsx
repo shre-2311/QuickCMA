@@ -4,6 +4,7 @@ import Navbar from "@/Components/Navbar";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function AboutUs() {
   const mapp: {
@@ -49,6 +50,84 @@ export default function AboutUs() {
   useEffect(() => {
     setDiscount(code === "Feb10" ? 10 : 0);
   }, [code]);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+  
+
+  const [transactionId, setTransactionId] = useState<string | null>(null);
+
+  const handlePlaceOrder = async () => {
+    if (!transactionId) {
+      alert("Please complete the payment before placing the order.");
+      return;
+    }
+
+    await emailjs.send(
+      "service_xcryxnl",
+      "template_jsycc6u",
+      {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.name_of_campany,
+        address: `${formData.address}, ${formData.city}, ${formData.pincode}, Maharashtra, India`,
+        order_details: `Plan: ${mapp[plan].name}, No. of PCs: ${mapp[plan].no_of_pc}, Price: ₹${discountedPrice}`,
+        transaction_id: transactionId,
+      },
+      "mGTYVkEBZidlxelJz"
+    );
+
+    alert("Order placed successfully!");
+  };
+
+  const handlePayment = async () => {
+    if (typeof window === "undefined" || !window.Razorpay) {
+      console.error("Razorpay SDK not loaded");
+      return;
+    }
+  
+    const res = await fetch("/api/razorpay", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        amount: discountedPrice,
+        currency: "INR",
+      }),
+    });
+  
+    const order = await res.json();
+    const options = {
+      key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
+      amount: order.amount,
+      currency: order.currency,
+      name: formData.name_of_campany || formData.name,
+      description: "Software License Purchase",
+      order_id: order.id,
+      handler: function (response: any) {
+        setTransactionId(response.razorpay_payment_id);
+      },
+      prefill: {
+        name: formData.name,
+        email: formData.email,
+        contact: formData.phone,
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
+  
+    const rzp1 = new (window as any).Razorpay(options);
+    rzp1.open();
+  };
+  
+
   return (
     <>
       <Navbar />
@@ -192,12 +271,14 @@ export default function AboutUs() {
           <div className="flex flex-col space-y-2">
             <div className=" text-md bg-gray-200 px-2 py-4 font-bold flex justify-between rounded-md items-end text-gray-600">
               <div>UPI/NetBanking/Credit Card/Debit Card</div>
-              <Image
-                alt=""
-                src="/rzp_payment_icon.svg"
-                width={120}
-                height={60}
-              />
+              <button onClick={handlePayment}>
+                <Image
+                  alt=""
+                  src="/rzp_payment_icon.svg"
+                  width={120}
+                  height={60}
+                />
+              </button>
             </div>
             <span>
               Pay securely by UPI, Credit or Debit card or Internet Banking
@@ -214,7 +295,12 @@ export default function AboutUs() {
                 I have read and agree to the website Terms and conditions *
               </span>
             </label>
-            <button type="submit" className="bg-blue-500 text-white p-2 mt-4">
+            <button
+              type="submit"
+              className="bg-blue-500 text-white p-2 mt-4"
+              // disabled={!transactionId}
+              onClick={handlePlaceOrder}
+            >
               Place order
             </button>
           </div>

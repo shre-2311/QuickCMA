@@ -114,44 +114,44 @@ export default function Navbar() {
           <div className="flex gap-2 items-center">
             <div className="text-black text-lg h-full flex items-center gap-2">
               Hey, {user.name} 👋🏼
-            <Image
-              className={`UserImage w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 cursor-pointer`}
-              src={user.photo}
-              alt="Bordered avatar"
-              width={40}
-              height={40}
-              onClick={() => setLogoutVisible(!logoutVisible)}
-            />
+              <Image
+                className={`UserImage w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 cursor-pointer`}
+                src={user.photo}
+                alt="Bordered avatar"
+                width={40}
+                height={40}
+                onClick={() => setLogoutVisible(!logoutVisible)}
+              />
             </div>
             <div
               className={`${
                 logoutVisible ? "block" : "hidden"
               } absolute top-16 right-2 bg-white rounded-[32px] border-[#000000a3] border-[1px] border-solid`}
             >
-            <Link
-              href={"/"}
-              onClick={() => {
-                setUser({ name: "", photo: "", email: "" });
-                setResult(false);
-                localStorage.removeItem("userNameSpardha");
-                localStorage.removeItem("userImageSpardha");
-                localStorage.removeItem("userEmailSpardha");
-              }}
-              className="hidden lg:flex rounded-[32px] text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
-            >
-              <div>LOGOUT</div>
-            </Link>
+              <Link
+                href={"/"}
+                onClick={() => {
+                  setUser({ name: "", photo: "", email: "" });
+                  setResult(false);
+                  localStorage.removeItem("userNameSpardha");
+                  localStorage.removeItem("userImageSpardha");
+                  localStorage.removeItem("userEmailSpardha");
+                }}
+                className="hidden lg:flex rounded-[32px] text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
+              >
+                <div>LOGOUT</div>
+              </Link>
             </div>
           </div>
         )}
-      <Image
-        src="/menu.svg"
-        width={24}
-        height={24}
-        alt="Menu"
-        className="lg:hidden cursor-pointer"
-        onClick={() => setMenuopen(!menuopen)}
-      />
+        <Image
+          src="/menu.svg"
+          width={24}
+          height={24}
+          alt="Menu"
+          className="lg:hidden cursor-pointer"
+          onClick={() => setMenuopen(!menuopen)}
+        />
       </div>
       <div
         className={
@@ -178,41 +178,41 @@ export default function Navbar() {
           onClick={() => setMenuopen(!menuopen)}
         />
         <div className="flex flex-col gap-[34px]">
-        {!result ? (
-          <Link
-            href={"/"}
-            onClick={handleGoogleSignIn}
-            className="lg:hidden flex rounded-[32px] justify-center text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px] text-center"
-          >
-            <div>LOGIN NOW</div>
-          </Link>
-        ) : (
-          <div className="flex flex-col lg:flex-row gap-2">
-            <div className="text-black text-sm h-full flex items-center justify-between">
-              Hey, {user.name} 👋🏼
-            <Image
-              className={`UserImage w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 cursor-pointer`}
-              src={user.photo}
-              alt="Bordered avatar"
-              width={40}
-              height={40}
-            />
-            </div>
+          {!result ? (
             <Link
               href={"/"}
-              onClick={() => {
-                setUser({ name: "", photo: "", email: "" });
-                setResult(false);
-                localStorage.removeItem("userNameSpardha");
-                localStorage.removeItem("userImageSpardha");
-                localStorage.removeItem("userEmailSpardha");
-              }}
-              className="lg:hidden flex rounded-[32px] text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
+              onClick={handleGoogleSignIn}
+              className="lg:hidden flex rounded-[32px] justify-center text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px] text-center"
             >
-              <div>LOGOUT</div>
+              <div>LOGIN NOW</div>
             </Link>
-          </div>
-        )}
+          ) : (
+            <div className="flex flex-col lg:flex-row gap-2">
+              <div className="text-black text-sm h-full flex items-center justify-between">
+                Hey, {user.name} 👋🏼
+                <Image
+                  className={`UserImage w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500 cursor-pointer`}
+                  src={user.photo}
+                  alt="Bordered avatar"
+                  width={40}
+                  height={40}
+                />
+              </div>
+              <Link
+                href={"/"}
+                onClick={() => {
+                  setUser({ name: "", photo: "", email: "" });
+                  setResult(false);
+                  localStorage.removeItem("userNameSpardha");
+                  localStorage.removeItem("userImageSpardha");
+                  localStorage.removeItem("userEmailSpardha");
+                }}
+                className="lg:hidden flex rounded-[32px] text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
+              >
+                <div>LOGOUT</div>
+              </Link>
+            </div>
+          )}
           <div className="flex flex-col gap-4">
             <Link
               href={"#home"}

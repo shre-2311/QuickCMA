@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-row gap-[11px] w-full h-auto mt-2.5">
           <div className="rounded-[32px] border-[1px] border-[#0000007d] px-4 py-[6px] text-black font-bold text-[14.77px] leading-6 w-auto h-auto text-nowrap">
-            BUY NOW ↗
+             BUY NOW ↗ 
           </div>
           <div className="rounded-[32px] border-[1px] bg-black px-4 py-[6px] w-auto h-9">
             <div className=" text-white  font-bold text-[14.77px] leading-6 w-full h-full text-nowrap">

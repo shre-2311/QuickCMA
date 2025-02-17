@@ -27,7 +27,7 @@ export default function Contactus() {
       <div className="w-full md:w-[581px] px-2 flex-col justify-center items-start gap-[17px] inline-flex">
         <div className="relative w-full">
           <input
-          type="text"
+            type="text"
             className="self-stretch px-[33px] py-4 rounded-[39px] border border-black w-full  text-black"
             onBlur={() => setIshoverName(false)}
             onFocus={() => setIshoverName(true)}
