@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -18,9 +19,9 @@ export default function Hero() {
           less than 10 minutes with power of Excel and AI .
         </div>
         <div className="flex flex-row gap-[11px] w-full h-auto mt-2.5">
-          <div className="rounded-[32px] border-[1px] border-[#0000007d] px-4 py-[6px] text-black font-bold text-[14.77px] leading-6 w-auto h-auto text-nowrap">
+          <Link href={'#price'} className="rounded-[32px] border-[1px] border-[#0000007d] px-4 py-[6px] text-black font-bold text-[14.77px] leading-6 w-auto h-auto text-nowrap">
              BUY NOW ↗ 
-          </div>
+          </Link>
           <div className="rounded-[32px] border-[1px] bg-black px-4 py-[6px] w-auto h-9">
             <div className=" text-white  font-bold text-[14.77px] leading-6 w-full h-full text-nowrap">
               GET A DEMO NOW ↗

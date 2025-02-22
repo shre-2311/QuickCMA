@@ -53,7 +53,7 @@ export default function AboutUs() {
   });
   const [code, setCode] = useState("");
   useEffect(() => {
-    const disval: number = (mapp[plan].price * discount) / 100;
+    const disval: number = parseInt(((mapp[plan].price * discount) / 100).toString());
     setDiscountedPrice(mapp[plan].price - disval);
   }, [code, discount]);
   useEffect(() => {

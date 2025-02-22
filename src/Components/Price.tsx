@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Price() {
   return (
     <div className="md:h-[490px] w-full pt-4 pb-12 md:pb-0 flex-col justify-start items-center gap-4 inline-flex" id="price">
@@ -33,11 +35,11 @@ export default function Price() {
               </div>
             </div>
             <div className="w-[232px] h-11 relative overflow-hidden ">
-              <div className="w-[232px] h-11 bg-[#fff7] rounded-3xl flex justify-center items-center">
+              <Link href={'/Buy/basic-plan'} className="w-[232px] h-11 bg-[#fff7] rounded-3xl flex justify-center items-center">
                 <div className="text-center text-black text-[15px] font-medium">
                   Choose plan
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -58,19 +60,19 @@ export default function Price() {
               </div>
               <div className="h-[88px] flex-col justify-center items-start gap-1.5 flex overflow-hidden">
                 <div className="text-white text-[28px] font-medium">
-                  Company(3 PC)
+                  Company (3 PC)
                 </div>
                 <div className="w-[232px] text-white text-sm font-medium">
                   Automation plus enterprise-grade features.
                 </div>
               </div>
             </div>
-            <div className="w-[232px] h-11 relative  overflow-hidden">
+            <Link href={'/Buy/standard-plan'} className="w-[232px] h-11 relative  overflow-hidden">
               <div className="w-[232px] h-11 left-0 top-0 absolute bg-[#962424] rounded-3xl" />
               <div className="left-[68px] top-[11px] absolute text-center text-white text-[15px] font-medium">
                 Choose plan
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className=" px-[30px] py-5 bg-[#4b7492] rounded-[26px] shadow-[0px_14px_34px_0px_rgba(4,4,4,0.15)] flex-col justify-start items-end gap-5 inline-flex">
