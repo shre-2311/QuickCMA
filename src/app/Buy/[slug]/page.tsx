@@ -67,7 +67,6 @@ export default function AboutUs() {
     document.body.appendChild(script);
   }, []);
   
-
   const [transactionId, setTransactionId] = useState<string | null>(null);
 
   const handlePlaceOrder = async () => {
@@ -87,9 +86,10 @@ export default function AboutUs() {
         address: `${formData.address}, ${formData.city}, ${formData.pincode}, Maharashtra, India`,
         order_details: `Plan: ${mapp[plan].name}, No. of PCs: ${mapp[plan].no_of_pc}, Price: ₹${discountedPrice}`,
         transaction_id: transactionId,
+
       },
     );
-
+ 
     alert("Order placed successfully!");
   };
 
