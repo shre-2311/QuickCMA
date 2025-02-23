@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div className="w-full h-auto px-4 md:px-[244px] py-3 md:py-[64px] bg-[#35362d] flex-col justify-start items-start gap-2.5 inline-flex overflow-hidden">
+    <div className="w-full h-auto px-4 md:px-8 xl:px-[244px] py-3 md:py-6 xl:py-[64px] bg-[#35362d] flex-col justify-start items-start gap-2.5 inline-flex overflow-hidden">
       <div className="w-full flex flex-col items-center gap-3">
         <div className="w-full justify-between items-center md:items-start gap-8 md:gap-40 inline-flex flex-col md:flex-row">
           <div className="text-white text-4xl font-bold font-['Satoshi Variable'] leading-10">

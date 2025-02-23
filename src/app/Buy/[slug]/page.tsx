@@ -78,11 +78,6 @@ export default function AboutUs() {
     script.async = true;
     document.body.appendChild(script);
   }, []);
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 572208b4e84fa2944ba605e8bb4ad2e87aa5397e
   const [transactionId, setTransactionId] = useState<string | null>(null);
 
   const handlePlaceOrder = async () => {
@@ -91,23 +86,6 @@ export default function AboutUs() {
       return;
     }
 
-<<<<<<< HEAD
-    await emailjs.send(
-      "service_xcryxnl",
-      "template_jsycc6u",
-      {
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        company: formData.name_of_campany,
-        address: `${formData.address}, ${formData.city}, ${formData.pincode}, Maharashtra, India`,
-        order_details: `Plan: ${mapp[plan].name}, No. of PCs: ${mapp[plan].no_of_pc}, Price: ₹${discountedPrice}`,
-        transaction_id: transactionId,
-
-      },
-    );
- 
-=======
     await emailjs.send("service_xcryxnl", "template_jsycc6u", {
       name: formData.name,
       email: formData.email,
@@ -118,7 +96,6 @@ export default function AboutUs() {
       transaction_id: transactionId,
     });
 
->>>>>>> 572208b4e84fa2944ba605e8bb4ad2e87aa5397e
     alert("Order placed successfully!");
   };
 
@@ -356,14 +333,15 @@ export default function AboutUs() {
           <div className="flex flex-col space-y-2">
             <div className=" text-md bg-gray-200 px-2 py-4 font-bold flex justify-between rounded-md items-end text-gray-600">
               <div>UPI/NetBanking/Credit Card/Debit Card</div>
-              <button onClick={handlePayment}>
-                <Image
-                  alt=""
-                  src="/rzp_payment_icon.svg"
-                  width={120}
-                  height={60}
-                />
-              </button>
+              <Image
+                alt=""
+                src="/rzp_payment_icon.svg"
+                width={120}
+                height={60}
+              />
+            </div>
+            <div className="w-full h-auto bg-blue-500 text-white p-2 rounded-md flex justify-center items-center">
+              <button className="w-full h-auto text-white" onClick={handlePayment}>{transactionId? "Payment Done":"Pay Now"}</button>
             </div>
             <span>
               Pay securely by UPI, Credit or Debit card or Internet Banking
@@ -382,8 +360,9 @@ export default function AboutUs() {
             </label>
             <button
               type="submit"
-              className="bg-blue-500 text-white p-2 mt-4"
-              // disabled={!transactionId}
+              className="bg-blue-500 text-white p-2 mt-4 rounded-md"
+              disabled={!transactionId}
+              style={{ cursor: !transactionId ? "not-allowed" : "pointer" }}
               onClick={handlePlaceOrder}
             >
               Place order
