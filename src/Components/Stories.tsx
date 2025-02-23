@@ -85,7 +85,7 @@ export default function Stories() {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, [scrolls, scrolling]);
+  }, [scrolls, scrolling, StoriesCarouselData.length]);
 
   return (
     <div className="w-full h-full md:h-[600px] flex flex-col justify-start relative overflow-y-visible">
@@ -97,7 +97,7 @@ export default function Stories() {
         alt="Previous"
         width={50}
         height={50}
-        className="hidden md:block absolute z-[55] top-[152px] 2xl:left-1/4 xl:left-[15%] left-10 rotate-180 cursor-pointer"
+        className="hidden md:block absolute z-[55] top-[192px] 2xl:left-1/4 xl:left-[15%] left-10 rotate-180 cursor-pointer"
         onClick={() => {
           if (!scrolling) slidePrev(window.innerWidth < 1024 ? 315 : 832);
         }}
@@ -107,7 +107,7 @@ export default function Stories() {
         alt="Next"
         width={50}
         height={50}
-        className="hidden md:block absolute z-[55] top-[152px] 2xl:right-1/4 xl:right-[15%] right-10 cursor-pointer"
+        className="hidden md:block absolute z-[55] top-[192px] 2xl:right-1/4 xl:right-[15%] right-10 cursor-pointer"
         onClick={() => {
           if (!scrolling) slideNext(window.innerWidth < 1024 ? 315 : 832);
         }}

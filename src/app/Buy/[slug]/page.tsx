@@ -9,11 +9,20 @@ import emailjs from "@emailjs/browser";
 declare global {
   interface Window {
     Razorpay: {
-      new (options: { key: string; amount: number; currency: string; name: string; description: string; order_id: string; handler: (response: { razorpay_payment_id: string }) => void; prefill: { name: string; email: string; contact: string }; theme: { color: string } }): { open: () => void };
+      new (options: {
+        key: string;
+        amount: number;
+        currency: string;
+        name: string;
+        description: string;
+        order_id: string;
+        handler: (response: { razorpay_payment_id: string }) => void;
+        prefill: { name: string; email: string; contact: string };
+        theme: { color: string };
+      }): { open: () => void };
     };
   }
 }
-
 
 export default function AboutUs() {
   const mapp: {
@@ -50,10 +59,13 @@ export default function AboutUs() {
     address: "",
     city: "",
     pincode: "",
+    state: "",
   });
   const [code, setCode] = useState("");
   useEffect(() => {
-    const disval: number = parseInt(((mapp[plan].price * discount) / 100).toString());
+    const disval: number = parseInt(
+      ((mapp[plan].price * discount) / 100).toString()
+    );
     setDiscountedPrice(mapp[plan].price - disval);
   }, [code, discount]);
   useEffect(() => {
@@ -66,7 +78,11 @@ export default function AboutUs() {
     script.async = true;
     document.body.appendChild(script);
   }, []);
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 572208b4e84fa2944ba605e8bb4ad2e87aa5397e
   const [transactionId, setTransactionId] = useState<string | null>(null);
 
   const handlePlaceOrder = async () => {
@@ -75,6 +91,7 @@ export default function AboutUs() {
       return;
     }
 
+<<<<<<< HEAD
     await emailjs.send(
       "service_xcryxnl",
       "template_jsycc6u",
@@ -90,6 +107,18 @@ export default function AboutUs() {
       },
     );
  
+=======
+    await emailjs.send("service_xcryxnl", "template_jsycc6u", {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      company: formData.name_of_campany,
+      address: `${formData.address}, ${formData.city}, ${formData.pincode}, ${formData.state}, India`,
+      order_details: `Plan: ${mapp[plan].name}, No. of PCs: ${mapp[plan].no_of_pc}, Price: ₹${discountedPrice}`,
+      transaction_id: transactionId,
+    });
+
+>>>>>>> 572208b4e84fa2944ba605e8bb4ad2e87aa5397e
     alert("Order placed successfully!");
   };
 
@@ -98,7 +127,7 @@ export default function AboutUs() {
       console.error("Razorpay SDK not loaded");
       return;
     }
-  
+
     const res = await fetch("/api/razorpay", {
       method: "POST",
       headers: {
@@ -109,7 +138,7 @@ export default function AboutUs() {
         currency: "INR",
       }),
     });
-  
+
     const order = await res.json();
     const options = {
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID!,
@@ -130,16 +159,15 @@ export default function AboutUs() {
         color: "#3399cc",
       },
     };
-  
+
     const rzp1 = new window.Razorpay(options);
     rzp1.open();
   };
-  
 
   return (
     <>
       <Navbar />
-      <div className="flex flex-col md:flex-row gap-8 pt-20 items-start justify-center h-full pb-8">
+      <div className="flex flex-col md:flex-row gap-8 pt-20 items-start justify-center pb-8">
         <div className="flex flex-col w-full md:w-1/4 px-2">
           <div className="text-4xl font-bold text-black">Billing details</div>
           <form className="flex flex-col mt-5 space-y-4 text-black">
@@ -171,7 +199,7 @@ export default function AboutUs() {
                 type="text"
                 className="border p-2"
                 value={formData.name_of_campany}
-                name="gstin"
+                name="name_of_campany"
                 onChange={(e) => handleInputChange(e)}
               />
             </label>
@@ -208,23 +236,62 @@ export default function AboutUs() {
                 onChange={(e) => handleInputChange(e)}
               />
             </label>
-            <label className="flex flex-col">
+            <label className="flex flex-col relative">
               State *
-              <input
-                type="text"
+              <select
                 className="border p-2"
-                value="Maharashtra"
-                readOnly
-              />
-            </label>
-            <label className="flex flex-col">
-              Country *
-              <input
-                type="text"
-                className="border p-2"
-                value="India"
-                readOnly
-              />
+                value={formData.state}
+                name="state"
+                onChange={(e) =>
+                  setFormData((prevData) => ({
+                    ...prevData,
+                    ["state"]: e.target.value,
+                  }))
+                }
+                id="inputState"
+              >
+                <option value="SelectState">Select State</option>
+                <option value="Andra Pradesh">Andra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madya Pradesh">Madya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Orissa">Orissa</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttaranchal">Uttaranchal</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman and Nicobar Islands">
+                  Andaman and Nicobar Islands
+                </option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadar and Nagar Haveli">
+                  Dadar and Nagar Haveli
+                </option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadeep">Lakshadeep</option>
+                <option value="Pondicherry">Pondicherry</option>
+              </select>
             </label>
             <label className="flex flex-col">
               Pincode *
@@ -266,9 +333,19 @@ export default function AboutUs() {
                 type="text"
                 className="border p-2"
                 value={code}
+                placeholder="Enter code"
                 onChange={(e) => {
                   setCode(e.target.value);
                 }}
+                style={
+                  discount
+                    ? {
+                        borderColor: "green",
+                        outlineWidth: "5px",
+                        outlineColor: "green",
+                      }
+                    : {}
+                }
               />
             </label>
           </div>
