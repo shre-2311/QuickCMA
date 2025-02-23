@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "@/app/firebaseconfig";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [menuopen, setMenuopen] = useState<boolean>(false);
@@ -38,6 +39,7 @@ export default function Navbar() {
         setResult(false);
       });
   };
+  const pathname = usePathname();
   return (
     <>
       <div className="w-full h-[70px] pl-2 pr-5 xl:px-4 2xl:px-8 py-[16.3px] border-[0.5px] border-[#E8E8E899] backdrop-blur-[44px] justify-between items-center inline-flex bg-white shadow-[0px_12px_48px_0px_#0067690D] ">
@@ -52,7 +54,7 @@ export default function Navbar() {
         </Link>
         <div className="hidden lg:flex justify-start items-start gap-6">
           <Link
-            href={"#home"}
+            href={pathname === "/" ? "#home" : "/#home"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -62,7 +64,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link
-            href={"#How"}
+            href={pathname === "/" ? "#How" : "/#How"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -82,7 +84,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link
-            href={"#price"}
+            href={pathname === "/" ? "#price" : "/#price"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -92,7 +94,7 @@ export default function Navbar() {
             </div>
           </Link>
           <Link
-            href={"#contact"}
+            href={pathname === "/" ?"#contact": "/#contact"}
             className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
           >
             <div
@@ -215,7 +217,7 @@ export default function Navbar() {
           )}
           <div className="flex flex-col gap-4">
             <Link
-              href={"#home"}
+              href={pathname === "/" ? "#home" : "/#home"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
@@ -225,7 +227,7 @@ export default function Navbar() {
               </div>
             </Link>
             <Link
-              href={"#How"}
+              href={pathname === "/" ? "#How" : "/#How"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
@@ -245,7 +247,7 @@ export default function Navbar() {
               </div>
             </Link>
             <Link
-              href={"#price"}
+              href={pathname === "/" ? "#price" : "/#price"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
@@ -255,7 +257,7 @@ export default function Navbar() {
               </div>
             </Link>
             <Link
-              href={"#contact"}
+              href={pathname === "/" ? "#contact" : "/#contact"}
               className="xl:px-1 2xl:px-3 px-0.5 xl:py-3 py-1 lg:justify-center items-center flex bg-transparent lg:hover:bg-[#65A6FA1A] cursor-pointer rounded-xl"
             >
               <div
