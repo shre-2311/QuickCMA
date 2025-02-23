@@ -85,7 +85,7 @@ export default function Stories() {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, [scrolls, scrolling]);
+  }, [scrolls, scrolling, StoriesCarouselData.length]);
 
   return (
     <div className="w-full h-full md:h-[600px] flex flex-col justify-start relative overflow-y-visible">

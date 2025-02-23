@@ -61,7 +61,6 @@ export default function AboutUs() {
     pincode: "",
     state: "",
   });
-  const [open, setOpen] = useState(false);
   const [code, setCode] = useState("");
   useEffect(() => {
     const disval: number = parseInt(
@@ -221,8 +220,6 @@ export default function AboutUs() {
                 className="border p-2"
                 value={formData.state}
                 name="state"
-                onFocus={() => setOpen(true)}
-                onBlur={() => setOpen(false)}
                 onChange={(e) =>
                   setFormData((prevData) => ({
                     ...prevData,
