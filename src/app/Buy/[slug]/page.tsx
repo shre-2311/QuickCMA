@@ -177,7 +177,7 @@ export default function AboutUs() {
                 type="text"
                 className="border p-2"
                 value={formData.name_of_campany}
-                name="gstin"
+                name="name_of_campany"
                 onChange={(e) => handleInputChange(e)}
               />
             </label>
