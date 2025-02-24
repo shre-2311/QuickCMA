@@ -104,20 +104,20 @@ export default function Contactus() {
           <button
             className="text-white text-2xl font-bold font-['Satoshi Variable'] leading-normal w-full h-full"
             onClick={async () => {
-              emailjs.init("mGTYVkEBZidlxelJz");
+              emailjs.init("sDFn6wL7Gp11MA8Ty");
               setTxt("Submitting...");
               console.log(inputEmail, inputName, inputMobile, inputQuery);
               try {
                 await emailjs.send(
-                  "service_xcryxnl",
-                  "template_55zij19",
+                  "service_hwyh516",
+                  "template_y9kmijs",
                   {
                     name: inputName,
                     query: inputQuery,
                     email: inputEmail,
                     number: inputMobile,
                   },
-                  "mGTYVkEBZidlxelJz"
+                  "sDFn6wL7Gp11MA8Ty"
                 );
                 setTxt("Submitted!");
                 setInputEmail("");

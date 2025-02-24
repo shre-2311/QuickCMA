@@ -86,7 +86,7 @@ export default function AboutUs() {
       return;
     }
 
-    await emailjs.send("service_xcryxnl", "template_jsycc6u", {
+    await emailjs.send("service_hwyh516", "template_96lm8dn", {
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
@@ -309,6 +309,7 @@ export default function AboutUs() {
               <input
                 type="text"
                 className="border p-2"
+
                 value={code}
                 placeholder="Enter code"
                 onChange={(e) => {
