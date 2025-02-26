@@ -115,6 +115,7 @@ export default function AboutUs() {
         currency: "INR",
       }),
     });
+  
 
     const order = await res.json();
     const options = {
@@ -127,6 +128,7 @@ export default function AboutUs() {
       handler: function (response: { razorpay_payment_id: string }) {
         setTransactionId(response.razorpay_payment_id);
       },
+
       prefill: {
         name: formData.name,
         email: formData.email,
