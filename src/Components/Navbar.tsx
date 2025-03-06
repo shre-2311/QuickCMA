@@ -108,7 +108,7 @@ export default function Navbar() {
           <Link
             href={""}
             onClick={handleGoogleSignIn}
-            className="hidden lg:flex rounded-[32px] bg-[#fff] hover:bg-[#000] hover:text-white animation-all transition-300 text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
+            className="hidden lg:flex rounded-[32px] bg-[#fff] hover:bg-[#000] hover:text-white animation-all duration-300 text-black border-[#000000a3] border-[1px] border-solid font-medium cursor-pointer px-4 py-[6px]"
           >
             <div>LOGIN NOW</div>
           </Link>
