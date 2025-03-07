@@ -1,5 +1,7 @@
+"use client"; // Ensure this is at the very top
 import Footer from "@/Components/Footer";
 import Navbar from "@/Components/Navbar";
+import { motion } from "framer-motion";
 
 export default function AboutUs() {
   // About Us Data
@@ -71,30 +73,67 @@ export default function AboutUs() {
     <>
       <Navbar />
       <div className="p-8 bg-[#F5FBFF] text-black w-full">
-        {/* About QuickCMA Section */}
-        <div className="text-[32px] font-bold leading-10 text-black w-full text-center">
+        <motion.div
+          className="text-[32px] font-bold leading-10 text-black w-full text-center"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           About Us
-        </div>{" "}
+        </motion.div>
         {aboutUsData.paragraphs.map((section, index) => (
-          <div key={index} className="mb-8 ">
+          <motion.div
+            key={index}
+            className="mb-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            viewport={{ once: true }}
+          >
             <h2 className="text-2xl font-semibold mb-4">{section.heading}</h2>
-            <p className="">{section.paragraph}</p>
-          </div>
+            <p>{section.paragraph}</p>
+          </motion.div>
         ))}
-        {/* Features of QuickCMA Section */}
-        <h1 className="text-3xl font-bold mb-6">{quickCMAFeatures.title}</h1>
-        {quickCMAFeatures.features.map((feature, index) => (
-          <div key={index} className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">{feature.heading}</h2>
-            <ul className="list-disc pl-6 ">
-              {feature.points.map((point, idx) => (
-                <li key={idx} className="mb-2">
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+
+        {/* Features Section */}
+        <motion.h1
+          className="text-3xl font-bold mb-6 text-center"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          {quickCMAFeatures.title}
+        </motion.h1>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {quickCMAFeatures.features.map((feature, index) => (
+            <motion.div
+              key={index}
+              className="p-6 bg-white rounded-2xl shadow-lg border-l-4 border-blue-500 backdrop-blur-md hover:scale-105 transition-all duration-300"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-2xl font-semibold mb-4 text-blue-600">
+                {feature.heading}
+              </h2>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                {feature.points.map((point, idx) => (
+                  <motion.li
+                    key={idx}
+                    className="mb-2"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  >
+                    {point}
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
       </div>
       <Footer />
     </>
