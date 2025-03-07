@@ -50,6 +50,96 @@ export default function Why() {
                   "No technical expertise needed! Even non-experts can generate CMAs with ease, making delegation seamless.",
                 cta: "Start Now"
               },
+              {
+                title: "Unmatched Flexibility",
+                description:
+                  "Unlike rigid software, everything in our Excel-based solution is editable. You can even modify formulas to suit your needs.",
+                cta: "Explore Features"
+              },
+              {
+                title: "One-Click Automation",
+                description:
+                  'Simply import your Tally data, set your limits, and click "Make CMA" —your report is ready in under 30 seconds.',
+                cta: "Get Started"
+              },
+              {
+                title: "Blazing Fast",
+                description:
+                  "From start to finish, CMA report is ready to print in just 10 min—a game changer compared to the 2-hour manual process.",
+                cta: "See it in Action"
+              },
+              {
+                title: "Accuracy You Can Trust",
+                description:
+                  "Every projection is backed by solid mathematics, ensuring logical and precise financial insights.",
+                cta: "Learn More"
+              },
+              {
+                title: "Effortless & Hassle-Free",
+                description:
+                  "No technical expertise needed! Even non-experts can generate CMAs with ease, making delegation seamless.",
+                cta: "Start Now"
+              },
+              {
+                title: "Unmatched Flexibility",
+                description:
+                  "Unlike rigid software, everything in our Excel-based solution is editable. You can even modify formulas to suit your needs.",
+                cta: "Explore Features"
+              },
+              {
+                title: "One-Click Automation",
+                description:
+                  'Simply import your Tally data, set your limits, and click "Make CMA" —your report is ready in under 30 seconds.',
+                cta: "Get Started"
+              },
+              {
+                title: "Blazing Fast",
+                description:
+                  "From start to finish, CMA report is ready to print in just 10 min—a game changer compared to the 2-hour manual process.",
+                cta: "See it in Action"
+              },
+              {
+                title: "Accuracy You Can Trust",
+                description:
+                  "Every projection is backed by solid mathematics, ensuring logical and precise financial insights.",
+                cta: "Learn More"
+              },
+              {
+                title: "Effortless & Hassle-Free",
+                description:
+                  "No technical expertise needed! Even non-experts can generate CMAs with ease, making delegation seamless.",
+                cta: "Start Now"
+              },
+              {
+                title: "Unmatched Flexibility",
+                description:
+                  "Unlike rigid software, everything in our Excel-based solution is editable. You can even modify formulas to suit your needs.",
+                cta: "Explore Features"
+              },
+              {
+                title: "One-Click Automation",
+                description:
+                  'Simply import your Tally data, set your limits, and click "Make CMA" —your report is ready in under 30 seconds.',
+                cta: "Get Started"
+              },
+              {
+                title: "Blazing Fast",
+                description:
+                  "From start to finish, CMA report is ready to print in just 10 min—a game changer compared to the 2-hour manual process.",
+                cta: "See it in Action"
+              },
+              {
+                title: "Accuracy You Can Trust",
+                description:
+                  "Every projection is backed by solid mathematics, ensuring logical and precise financial insights.",
+                cta: "Learn More"
+              },
+              {
+                title: "Effortless & Hassle-Free",
+                description:
+                  "No technical expertise needed! Even non-experts can generate CMAs with ease, making delegation seamless.",
+                cta: "Start Now"
+              },
             ].map((item, index) => (
               <motion.div
                 key={index}
