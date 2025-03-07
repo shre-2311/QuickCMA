@@ -44,3 +44,27 @@ div {
   scrollbar-width: none !important;
   /* Firefox */
 }
+
+
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,320px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+
+.animation1{
+  animation: fadeInUp .5s ease-out;
+}
+.animation2{
+  animation: fadeInUp 1.0s ease-out;
+}
+.animation3{
+  animation: fadeInUp 1.5s ease-out;
+}
