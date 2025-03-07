@@ -10,7 +10,7 @@ export default function How() {
         </div>
         <div className="flex items-center flex-col gap-4">
           {/* step1 */}
-          <div className="animation1 flex flex-col md:flex-row gap-[27px] px-2">
+          <div className="animation1 flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
             <div className="flex flex-col items-center gap-[15px]">
               <div className=" h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 1
@@ -41,7 +41,7 @@ export default function How() {
             </div>
           </div>
           {/* step2 */}
-          <div className="animation2 flex flex-col md:flex-row gap-[27px] px-2">
+          <div className="animation2 flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 2
@@ -73,7 +73,7 @@ export default function How() {
             </div>
           </div>
           {/* step3 */}
-          <div className="animation3 flex flex-col md:flex-row gap-[27px] px-2">
+          <div className="animation3 flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 3
