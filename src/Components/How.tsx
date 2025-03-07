@@ -56,9 +56,8 @@ export default function How() {
                   Import Financial Data
                 </div>
                 <div className="text-[#5f5f5f] text-base leading-[30px]">
-                  Import audited financial data from Tally with a single click.
-                  Quick CMA automatically classifies the Tally trial balance
-                  into the CMA format.
+                Import Actual years ( Audited ) data from Tally in one click.
+                 Quick CMA Auto Classifies tally trial balance to CMA Form .
                 </div>
               </div>
               <div className="w-full px-2">
@@ -88,8 +87,8 @@ export default function How() {
                   Generate Your CMA Report
                 </div>
                 <div className="text-[#5f5f5f] text-base leading-[30px]">
-                  Input your desired Cash Credit (C/C) limit and other key
-                  parameters directly from the dashboard.
+                Press MAKE CMA Button . Your CMA Will be ready in 30 seconds . 
+                We will make Projections in most logical way , while complying with major parameters of bank.
                 </div>
               </div>
               <div className="w-full px-2">
