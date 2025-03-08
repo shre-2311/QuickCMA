@@ -8,6 +8,7 @@ import Contactus from "@/Components/Contactus";
 import Footer from "@/Components/Footer";
 import "./globals.css";
 import Feature from "@/Components/Feature";
+import Faq from "@/Components/Faq";
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Feature/>
       <Price />
       <Stories />
+      <Faq/>
       <Contactus />
       <Footer />
     </div>
