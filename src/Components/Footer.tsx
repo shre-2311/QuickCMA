@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <div className="w-full h-auto px-4 md:px-8 xl:px-[244px] py-3 md:py-6 xl:py-[64px] bg-[#35362d] flex-col justify-start items-start gap-2.5 inline-flex overflow-hidden">
@@ -23,7 +24,7 @@ export default function Footer() {
             <div className=" text-white text-lg font-normal font-['Circular Std']">
               Contact Us
             </div>
-            <div className="flex flex-col items-start  gap-4">
+            <div className="flex flex-col items-start gap-4">
               <div className="w-full items-start inline-flex justify-start gap-4">
                 <div className=" opacity-70 text-white text-sm font-normal font-['Circular Std']">
                   Phone:
@@ -43,38 +44,19 @@ export default function Footer() {
             </div>
           </div>
           <div className="h-[86px] flex flex-col items-center md:items-start justify-between">
-            <div className="w-[66.67px]  text-white text-lg font-normal font-['Circular Std']">
+            <div className="w-[66.67px] text-white text-lg font-normal font-['Circular Std']">
               Social
             </div>
-            <div className="w-[196.22px] h-[22px] flex gap-4">
-              <Image
-                alt=""
-                width={36}
-                height={36}
-                className=""
-                src="/next.svg"
-              />
-              <Image
-                alt=""
-                width={36}
-                height={36}
-                className=""
-                src="/next.svg"
-              />
-              <Image
-                alt=""
-                width={36}
-                height={36}
-                className=""
-                src="/next.svg"
-              />
-              <Image
-                alt=""
-                width={36}
-                height={36}
-                className=""
-                src="/next.svg"
-              />
+            <div className="flex gap-4">
+              <a href="https://www.instagram.com/gupta.amay?igsh=MWU2Y3g3NXA0OGoxcw==" target="_blank" rel="noopener noreferrer">
+                <FaInstagram className="text-white text-2xl" />
+              </a>
+              <a href="https://www.linkedin.com/in/ca-amay-gupta-ab662a126?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="text-white text-2xl" />
+              </a>
+              <a href="https://youtube.com/@caamaygupta?si=uuR-nyYcPapSlEl8" target="_blank" rel="noopener noreferrer">
+                <FaYoutube className="text-white text-2xl" />
+              </a>
             </div>
           </div>
         </div>

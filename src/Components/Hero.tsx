@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
         <div className="text-[18px] font-normal leading-[27.2px] text-black">
           Build CMA Report for bank Finance in <br />
-          less than 10 minutes with power of Excel and AI .
+          less than 10 minutes with power of Excel and AI.
         </div>
         <div className="flex flex-row gap-[11px] w-full h-auto mt-2.5">
           <Link
@@ -28,14 +28,18 @@ export default function Hero() {
           >
             BUY NOW ↗
           </Link>
-          <Link href={"https://www.youtube.com/watch?v=CHnsdme6JyA&t=6s"} target="_blank" className="rounded-[32px] border-[1px] bg-black px-4 py-[6px] w-auto h-9">
-            <div className=" text-white  font-bold text-[14.77px] leading-6 w-full h-full text-nowrap">
+          <Link
+            href={"https://www.youtube.com/watch?v=CHnsdme6JyA&t=6s"}
+            target="_blank"
+            className="rounded-[32px] border-[1px] bg-black px-4 py-[6px] w-auto h-9"
+          >
+            <div className="text-white font-bold text-[14.77px] leading-6 w-full h-full text-nowrap">
               GET A DEMO NOW ↗
             </div>
           </Link>
         </div>
       </div>
-      <div className="w-auto h-auto ">
+      <div className="relative w-auto h-auto">
         <Link target="_blank" href={"https://www.youtube.com/watch?v=INz9IMK2ys8"}>
           <Image
             src={"/yt.jpg"}
@@ -45,6 +49,13 @@ export default function Hero() {
             className="h-full rounded-lg shadow-[-10px_20px_#972424] hover:shadow-[20px_10px_#972424] transition-all duration-300 cursor-pointer"
           />
         </Link>
+        {/* Play/Pause Button */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-white text-4xl font-bold p-4 rounded-full cursor-pointer">
+          ▶
+        </div>
+        <div className="absolute top-3 right-3 bg-black text-white text-xl p-3 rounded-full cursor-pointer">
+          ❚❚
+        </div>
       </div>
     </div>
   );
