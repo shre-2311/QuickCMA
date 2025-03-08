@@ -80,7 +80,7 @@ export default function Price() {
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="justify-start items-end inline-flex overflow-hidden">
                 <div className="text-white text-4xl font-bold leading-[46px]">
-                  ????
+                ₹XXXX
                 </div>
                 <div className="text-white text-[17px] font-medium">/year</div>
               </div>
@@ -95,9 +95,9 @@ export default function Price() {
             </div>
             <div className="w-[232px] h-11 relative overflow-hidden ">
               <div className="w-[232px] h-11 bg-[#fff7] rounded-3xl flex justify-center items-center">
-                <div className="text-center text-black text-[15px] font-medium">
+                <Link href={"#contact"} className="text-center text-black text-[15px] font-medium">
                   Contact us now!!
-                </div>
+                </Link>
               </div>
             </div>
           </div>

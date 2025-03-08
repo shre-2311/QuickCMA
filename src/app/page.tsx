@@ -7,16 +7,18 @@ import Stories from "@/Components/Stories";
 import Contactus from "@/Components/Contactus";
 import Footer from "@/Components/Footer";
 import "./globals.css";
+import Feature from "@/Components/Feature";
 
 
 export default function Home() {
   console.log(process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID)
   return (
-    <div className="h-auto w-full no-scrollbar overflow-x-hidden">
+    <div className="h-auto w-full no-scrollbar overflow-x-hidden bg-[#F5FBFF]">
       <Navbar />
       <Hero />
       <How />
       <Why />
+      <Feature/>
       <Price />
       <Stories />
       <Contactus />

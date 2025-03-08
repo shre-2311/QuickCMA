@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function How() {
   return (
-    <div className="w-screen h-auto bg-white flex flex-row items-center justify-center gap-x-[200px] py-8" id="How">
+    <div className="w-screen h-auto flex flex-row items-center justify-center gap-x-[200px] py-8" id="How">
       <div className="flex flex-col items-center gap-5">
         <div className="text-[32px] font-bold leading-10 text-black">
           How <span className="text-[#972424]">It</span> works
         </div>
         <div className="flex items-center flex-col gap-4">
           {/* step1 */}
-          <div className="animation1 flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
+          <div className=" flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 1
@@ -57,7 +57,7 @@ export default function How() {
             </div>
           </div>
           {/* step2 */}
-          <div className="animation2 flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
+          <div className=" flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 2
@@ -102,7 +102,7 @@ export default function How() {
             </div>
           </div>
           {/* step3 */}
-          <div className="animation3 flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
+          <div className=" flex flex-col md:flex-row gap-[27px] px-2 hover:scale-105 duration-500 ease-in-out">
             <div className="flex flex-col items-center gap-[15px]">
               <div className="h-[85px] w-[85px] bg-[#972424] rounded-full hidden md:flex items-center justify-center font-bold text-[50px]">
                 3
@@ -116,7 +116,7 @@ export default function How() {
                 Step 3
               </motion.div>
             </div>
-            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[183.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
+            <div className="flex flex-col md:flex-row md:w-[978px] md:h-[203.17px] gap-5 py-5 px-3 md:px-[18px] bg-[#FF4747] bg-opacity-10 rounded-[22px]">
               <div className="md:w-[550.6px] h-full flex flex-col gap-5">
                 <motion.div
                   className="font-semibold text-[20px] text-black"

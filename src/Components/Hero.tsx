@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div
-      className="w-screen h-auto bg-white flex flex-col md:flex-row items-center justify-center gap-x-[200px] gap-y-3 py-8"
+      className="w-screen h-auto flex flex-col md:flex-row items-center justify-center gap-x-[200px] gap-y-3 py-8"
       id="hero"
     >
       <div className="flex flex-col items-start px-3">

@@ -4,7 +4,7 @@ import style from "./why.module.css";
 
 export default function Why() {
   return (
-    <div className="w-screen overflow-hidden h-auto bg-white flex flex-row items-center justify-center gap-x-[200px] py-8">
+    <div className="w-screen overflow-hidden h-auto  flex flex-row items-center justify-center gap-x-[200px] py-8">
       <div className="flex flex-col items-center gap-4">
         {/* Animated Heading */}
         <motion.div
@@ -17,7 +17,7 @@ export default function Why() {
         </motion.div>
 
         {/* Scrollable Cards */}
-        <div className="h-[510px] w-full flex overflow-x-scroll overflow-y-visible no-scrollbar">
+        <div className="h-[360px] w-full flex overflow-x-scroll overflow-y-visible no-scrollbar">
           <div className={`flex gap-7 ${style["slide-track"]}`}>
             {[
               {
@@ -143,7 +143,7 @@ export default function Why() {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="w-[357px] h-[460px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex overflow-hidden relative"
+                className="w-[357px] h-[300px] px-[30px] py-5 bg-[#962424] rounded-[26px] shadow-[14px_16px_25px_0px_rgba(0,0,0,0.50)] border-2 border-white flex-col justify-start items-start gap-5 flex overflow-hidden relative"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -173,25 +173,13 @@ export default function Why() {
 
                 {/* Call-to-Action Button */}
                 <motion.button
-                  className="mt-4 px-6 py-2 text-white bg-[#c24f4f] rounded-[8px] font-medium hover:bg-[#972424] transition duration-300"
+                  className="px-6 py-2 text-white bg-[#c24f4f] rounded-[8px] font-medium hover:bg-[#972424] transition duration-300 z-50 mt-auto w-full"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.8 }}
                 >
                   {item.cta}
-                </motion.button>
-
-                {/* Floating Animation */}
-                <motion.div
-                  className="absolute bottom-0 left-0 w-full h-4 bg-[#972424] opacity-30 rounded-tl-lg"
-                  animate={{ y: ["0", "10px", "0"] }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                    ease: "easeInOut",
-                  }}
-                />
+                </motion.button>              
               </motion.div>
             ))}
           </div>

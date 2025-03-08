@@ -122,7 +122,7 @@ export default function Stories() {
           ))}
         </div>
       </div>
-      <div className="hidden lg:block h-auto w-auto top-[380px] left-1/2 -translate-x-1/2 absolute">
+      <div className="hidden lg:block h-auto w-auto top-[440px] left-1/2 -translate-x-1/2 absolute">
         <div className="w-auto h-6 bg-[#FDFDFD99] px-[16.8px] py-2 gap-[8.8px] flex rounded-[80px]">
           {[...Array(StoriesCarouselData.length)].map((_, index) => (
             <div
