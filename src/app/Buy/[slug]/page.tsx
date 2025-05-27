@@ -31,12 +31,12 @@ export default function AboutUs() {
     "basic-plan": {
       name: "Starter",
       no_of_pc: 1,
-      price: 4999,
+      price: 7500,
     },
     "standard-plan": {
       name: "Company",
       no_of_pc: 3,
-      price: 7500,
+      price: 10000,
     },
   };
   const [discount, setDiscount] = useState<number>(0);

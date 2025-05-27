@@ -21,7 +21,7 @@ export default function Price() {
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="justify-start items-end inline-flex overflow-hidden">
                 <div className="text-white text-4xl font-bold leading-[46px]">
-                  ₹4,999
+                  ₹7,500
                 </div>
                 <div className="text-white text-[17px] font-medium">/year</div>
               </div>
@@ -54,7 +54,7 @@ export default function Price() {
             <div className="flex-col justify-start items-start gap-5 flex">
               <div className="justify-start items-end inline-flex overflow-hidden">
                 <div className="text-white text-4xl font-bold leading-[46px]">
-                  ₹7,500
+                  ₹10,000
                 </div>
                 <div className="text-white text-[17px] font-medium">/year</div>
               </div>
