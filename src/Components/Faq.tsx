@@ -64,11 +64,10 @@ export default function FAQ() {
             key={index}
             className="border-t-4 border-t-red-500 rounded-lg p-4 shadow-md cursor-pointer transition-all duration-300 ease-in-out bg-red-100 hover:shadow-xl"
             onClick={() => toggleFAQ(index)}
-            whileHover={{ scale: 1.05 }} // Slightly increase the scale on hover
-            whileTap={{ scale: 0.98 }} // Slightly decrease the scale on tap
+            whileHover={{ scale: 1.05 }} 
+            whileTap={{ scale: 0.98 }} 
           >
             <div className="flex items-center">
-              {/* Chevron icon with smooth rotation */}
               <motion.span
                 animate={{ rotate: openIndex === index ? 90 : 0 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -90,7 +89,7 @@ export default function FAQ() {
                   animate={{ opacity: 1, height: "auto", x: 20 }} // Slide in from the right
                   exit={{ opacity: 0, height: 0, x: -20 }} // Slide out to the left
                   transition={{
-                    opacity: { duration: 0.4 },
+                    opacity: { duration: 0.5 },
                     height: { duration: 0.4 },
                     x: { type: "spring", stiffness: 300, damping: 25 },
                   }}
